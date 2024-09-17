@@ -1,4 +1,22 @@
-var produto = parseInt(prompt("Digite o valor do produto:"));
-var quanidade = parseInt(prompt("Digite a quantidade comprada do produto: "));
-var formaPagamento = "===== forma de pagamento =====\n"
-formaPagamento = formaPagamento + ""
+var valor = parseFloat(prompt("Faça sua compra e escolha a condição de pagamento que melhor o satisfaz!!!\nDigite o valor unitário do produto: R$ "));
+var qtde = parseInt(prompt("Digite a quantidade desejada do produto: "))
+var opcao = parseInt(prompt("1 => À vista, dinheiro ou cheque, 10% de desconto\n2 => À vista, cartão de credito, 5% de desconto\n3 => Em 2 vezes, preço sem juros\n4 => Em 3 vezes, preço + 10% de juros\nDigite a opção desejada de pagamento: "));
+var opcaoUm = valor * qtde * 0.1;
+var opcaoDois = (valor * qtde) * 0.05;
+var opcaoTres = (valor * qtde) / 2;
+var opcaoQuatro = ((valor * qtde) + opcaoUm) / 3
+if (opcao == 1) {
+    console.log("Pagamento em parcela ÚNICA e À VISTA com 10% de DESCONTO.");
+    console.log("O valor a ser pago é de: R$ " + ((valor * qtde) - opcaoUm));
+} else if (opcao == 2) {
+    console.log("Pagamento em parcela ÚNICA, no CARTÃO DE CRÉDITO, À VISTA e com 5% de DESCONTO.");
+    console.log("O valor a ser pago é de: R$ " + ((valor * qtde) - opcaoDois));
+} else if (opcao == 3) {
+    console.log("Pagamento parcelado em 2 vezes, SEM JUROS.");
+    console.log("Serão 2 parcelas no valor de: R$ " + opcaoTres + " cada.");
+} else if (opcao == 4) {
+    console.log("Pagamento parcelado em 3 vezes, com 10% de JUROS.");
+    console.log("Serão 3 parcelas no valor de: R$ " + opcaoQuatro + " cada.");
+}else {
+    console.log("Digite um valor VÁLIDO.");
+}

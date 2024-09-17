@@ -6,5 +6,5 @@ console.log("O número: " + numero + " é par");
 }else if(numero){
     console.log("O número: " + numero +" é impar");
 }else{
-    console.log("Digite um número");
+    console.log("digite um número ");
 }

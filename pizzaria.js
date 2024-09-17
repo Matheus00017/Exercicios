@@ -57,7 +57,7 @@ if(Codigo == 1){
 }
 
 console.log("A bebida escolhida foi: " + Codigo);
-console.log("foram pedidas:" + quantos + "bebidas");
+console.log("foram pedidas: " + quantos + " bebidas");
 console.log("O valor total a pagar: R$" + totalValor);
 
 var totalApagar = valorTotal + totalValor

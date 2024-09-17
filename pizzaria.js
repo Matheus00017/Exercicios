@@ -43,15 +43,15 @@ var quantos = parseInt(prompt("Digite quantos refrigerantes gostaria de pedir:")
 var totalValor = 0
 
 if(Codigo == 1){
-    totalValor = quantos * 5.00
+    totalValor = quantos * 5.00;
 }else if(Codigo == 2){
-    totalValor = quantos * 10.00
+    totalValor = quantos * 10.00;
 }else if(Codigo == 3){
-    totalValor = quantos * 3.50
+    totalValor = quantos * 3.50;
 }else if(Codigo == 4){
-    totalValor = quantos * 4.50
+    totalValor = quantos * 4.50;
 }else if(Codigo == 5){
-    totalValor = quantos * 7.20
+    totalValor = quantos * 7.20;
 }else{
     console.log("Digite um codigo vélido")
 }

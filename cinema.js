@@ -9,5 +9,5 @@ if (idade < 12){
 }else if(idade < 18){
     console.log("A classificação do filme é 16 anos:");
 }else{
-    console.log("A classificação é 18 anos:");
+    console.log("A classificação é 18 anos: ");
 }

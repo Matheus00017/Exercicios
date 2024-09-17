@@ -4,7 +4,7 @@ var opcao = parseInt(prompt("1 => À vista, dinheiro ou cheque, 10% de desconto\
 var opcaoUm = valor * qtde * 0.1;
 var opcaoDois = (valor * qtde) * 0.05;
 var opcaoTres = (valor * qtde) / 2;
-var opcaoQuatro = ((valor * qtde) + opcaoUm) / 3
+var opcaoQuatro = ((valor * qtde) + opcaoUm) / 3;
 if (opcao == 1) {
     console.log("Pagamento em parcela ÚNICA e À VISTA com 10% de DESCONTO.");
     console.log("O valor a ser pago é de: R$ " + ((valor * qtde) - opcaoUm));

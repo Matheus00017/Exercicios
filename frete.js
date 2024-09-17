@@ -4,6 +4,7 @@ var frete = compra + compra2;
 
 if(compra >= 300){
     console.log("O frete é gratis:");
+    console.log("O valor da compra ficou: " + compra);
 }else if(compra < 300){
     console.log("a compra ficou: " + frete);
 }

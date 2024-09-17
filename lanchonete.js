@@ -27,5 +27,5 @@ if(codigo == 100){
 }
 
 console.log("O seu lanche de " + codigo + " esta pronto ");
-console.log("Foram pedidos" + quantidade + "lanche");
+console.log("Foram pedidos" + quantidade + "lanche ");
 console.log("Total a pagar: R$" + valorTotal);
